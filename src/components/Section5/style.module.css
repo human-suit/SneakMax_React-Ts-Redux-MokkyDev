@@ -1,0 +1,36 @@
+.container {
+  position: relative;
+  background: #484184;
+  margin: 0;
+  overflow: hidden;
+  padding-bottom: 50px;
+}
+.leftBlock {
+  text-align: left;
+  color: white;
+  z-index: 3;
+  margin-top: 150px;
+  margin-left: 80px;
+}
+.crug {
+  height: 500px;
+  width: 500px;
+  margin-top: -200px;
+  background-color: #f24f50;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: 1000px;
+}
+.otp {
+  padding: 100px;
+}
+.flexCom {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 80px;
+}
+.blockX {
+  width: 100%;
+  height: 50px;
+  background-color: white;
+}

@@ -1,0 +1,22 @@
+.container {
+  background: white;
+  margin: 0;
+}
+.block {
+  width: 250px;
+  text-align: left;
+  overflow: hidden;
+}
+.block img {
+  width: 250px;
+  height: 250px;
+}
+.block h2 {
+  font-size: 18px;
+  width: 250px;
+
+  text-align: justify;
+}
+.block h3 {
+  font-size: 16px;
+}

@@ -1,0 +1,33 @@
+.container {
+  align-items: center;
+  padding: 20px 50px;
+  background: #484184;
+  margin: 0;
+}
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid white;
+}
+.logo {
+  display: flex;
+}
+.logo img {
+  height: 80px;
+  width: 140px;
+}
+ul {
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+}
+li {
+  margin-right: 15px;
+}
+li a {
+  color: white;
+  font-weight: 100;
+}
+.flex {
+  display: flex;
+}

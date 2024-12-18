@@ -1,0 +1,100 @@
+.container {
+  position: relative;
+  background: #484184;
+  padding: 0px 50px;
+  height: 600px;
+  margin: 0;
+  overflow: hidden;
+}
+.leftBlock {
+  text-align: left;
+  color: white;
+  z-index: 3;
+  margin-top: 150px;
+  margin-left: 80px;
+}
+.rightWord {
+  margin-left: 350px;
+  display: flex;
+  font-weight: 600;
+  text-align: right;
+}
+.rightWord p {
+  padding-left: 20px;
+}
+.palka {
+  margin-top: 28px;
+  width: 40px;
+  height: 4px;
+  background-color: white;
+}
+.block {
+  display: flex;
+  justify-content: space-between;
+}
+.leftBlock {
+  height: 300px;
+}
+.leftBlock h3 {
+  font-weight: 200;
+}
+.rightBlock {
+  padding: 0;
+  margin: 0;
+}
+.rightBlock img {
+  z-index: 1;
+  width: 600px;
+  height: 600px;
+}
+.blockP {
+  margin-left: -240px;
+  transform: rotate(15deg);
+  z-index: 2;
+  width: 330px;
+  margin-top: -70px;
+  height: 650px;
+  position: absolute;
+  background-color: #484184;
+}
+.blockX {
+  margin-left: 1070px;
+  transform: rotate(15deg);
+  z-index: 2;
+  width: 310px;
+  margin-top: 0px;
+  height: 660px;
+  position: absolute;
+  background-color: #484184;
+}
+.crug1 {
+  margin-top: -50px;
+  height: 300px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -120px;
+  width: 100px;
+  border: 1px solid white;
+}
+.crug {
+  margin-top: -200px;
+  height: 300px;
+  width: 400px;
+  border-radius: 50%;
+  position: absolute;
+  margin-left: -120px;
+  border: 1px solid white;
+}
+.crugRed {
+  position: absolute;
+  background-color: red;
+  width: 15px;
+  height: 15px;
+  z-index: 1;
+  margin-left: 333px;
+  margin-top: 100px;
+  border-radius: 50%;
+}
+.otp {
+  padding: 100px;
+}

@@ -1,0 +1,60 @@
+.container {
+  position: relative;
+  background: white;
+  margin: 0;
+  overflow: hidden;
+  padding: 50px 50px;
+  padding-bottom: 90px;
+}
+.leftBlock {
+  text-align: left;
+}
+.leftBlock button {
+  background-color: #f24f50;
+  border-radius: 10px;
+  padding: 20px 50px;
+  color: white;
+}
+.grid {
+  color: white;
+  text-align: center;
+  background-color: #484184;
+  border-radius: 5px;
+  width: 290px;
+  padding: 40px 20px;
+  display: grid;
+}
+.grid p {
+  margin-top: -5px;
+}
+.grid input {
+  padding: 20px 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+  color: gray;
+  margin-bottom: 10px;
+}
+.blockSect5 {
+  display: flex;
+  justify-content: space-between;
+}
+.rightBlock {
+}
+.flexImg {
+  display: flex;
+}
+.gridImg img {
+  margin: 10px;
+}
+.center {
+  margin-top: 15px;
+}
+.gridImg {
+  display: grid;
+}
+.red {
+  font-size: 18px;
+  font-weight: 500;
+  padding: 10px 20px;
+  color: whitesmoke;
+}

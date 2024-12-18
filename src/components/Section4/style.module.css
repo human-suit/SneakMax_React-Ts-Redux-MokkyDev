@@ -1,0 +1,96 @@
+.container {
+  text-align: left;
+  position: relative;
+  background-color: #fff4ee;
+  padding: 120px 50px;
+  padding-bottom: 50px;
+}
+.topHeader p {
+  color: #cec8c4;
+}
+.otp {
+  position: absolute;
+  background-color: white;
+  width: 100%;
+  height: 80px;
+  left: 0;
+  margin-top: -120px;
+}
+.list {
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.line {
+  height: 2px;
+  background-color: #cec8c4;
+  width: 100%;
+}
+.footerFlex {
+  margin-top: 20px;
+  justify-content: space-between;
+  display: flex;
+}
+.footerFlex button {
+  border: 1px solid #c0bcbb;
+  padding: 10px 50px;
+  font-weight: 100px;
+}
+.list input {
+  border: 0px;
+  color: #ddbeaf;
+  padding: 10px;
+  padding-bottom: 180px;
+  transition: 0;
+}
+.list input:focus-visible {
+  outline: 0px;
+}
+.cards {
+  display: flex;
+}
+.cards p {
+  margin-left: 10px;
+  width: 100px;
+}
+.lists {
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 20px;
+}
+.gridList {
+  padding-bottom: 40px;
+  display: grid;
+}
+.bodySectLast {
+  margin-top: 30px;
+  padding: 20px 40px;
+  padding-right: 100px;
+  border-radius: 5px;
+  width: 450px;
+  background-color: #dcbbaa;
+  color: white;
+}
+.bodySectLast input {
+  color: #d4d5d8;
+  padding: 15px 10px;
+  border: 0px;
+  margin-top: 10px;
+}
+.bodySectLast input:focus-visible {
+  outline: 0px;
+}
+.bodySectLast button {
+  margin-top: -40px;
+  background-color: #f24f50;
+  padding: 15px 50px;
+  color: white;
+  border: 0px;
+  border-radius: 5px;
+}
+.image img {
+  width: 820px;
+  margin-bottom: 20px;
+}

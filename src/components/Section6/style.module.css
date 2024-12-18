@@ -1,0 +1,40 @@
+.container {
+  position: relative;
+  background: #ffffff;
+  margin: 0;
+  overflow: hidden;
+  padding: 20px 50px;
+  padding-bottom: 100px;
+}
+.leftBlock {
+  text-align: left;
+}
+.leftBlock h2 {
+  font-size: 28px;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.line {
+  width: 100%;
+  height: 2px;
+  margin-top: 20px;
+  background-color: black;
+}
+.gridQues {
+  margin-left: 300px;
+}
+.flex button {
+  border: 0;
+  background-color: transparent;
+}
+.flex button:hover {
+  cursor: pointer;
+}
+.flex button:focus {
+  outline: none;
+}
+.gridQues p {
+  color: #bcbcbc;
+}

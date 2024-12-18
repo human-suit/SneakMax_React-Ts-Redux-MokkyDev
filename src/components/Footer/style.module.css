@@ -1,0 +1,30 @@
+.container {
+  align-items: center;
+  padding: 0px 50px;
+  background: #444a58;
+  margin: 0;
+}
+.flexBox {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  display: flex;
+}
+.logo img {
+  height: 80px;
+  width: 140px;
+}
+ul {
+  margin-top: 26px;
+  display: flex;
+  list-style: none;
+  font-size: 18px;
+}
+li {
+  margin-right: 15px;
+}
+li a {
+  color: white;
+  font-weight: 100;
+}

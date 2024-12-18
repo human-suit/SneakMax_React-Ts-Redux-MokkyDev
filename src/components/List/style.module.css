@@ -1,0 +1,62 @@
+.container {
+  padding: 20px 50px;
+  background: white;
+  margin: 0;
+  padding-bottom: 60px;
+}
+.container h2 {
+  text-align: left;
+}
+
+input[type="range"] {
+  accent-color: coral;
+}
+.flex {
+  display: flex;
+}
+.leftBord {
+  height: 620px;
+  padding: 20px 30px;
+  text-align: left;
+  background-color: #f2f0f3;
+}
+.leftBord button {
+  background-color: #444a58;
+  width: 100%;
+  padding: 15px 0px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  color: white;
+}
+.podbor h4 {
+  font-size: 18px;
+  font-weight: 500;
+}
+.but {
+  background-color: #f2f0f3 !important;
+  color: black !important;
+}
+.rightBord {
+  margin-left: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.gridBord {
+  display: grid;
+}
+.gridBord button {
+  margin-top: 40px;
+  background-color: #f24f50;
+  border-radius: 10px;
+  padding: 20px 50px;
+  color: white;
+}
+.flexSize {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.flexSize button {
+  padding: 10px;
+}

@@ -1,0 +1,20 @@
+.container {
+  margin: 0;
+  overflow: visible !important;
+}
+.block {
+  position: relative;
+  width: 320px;
+  text-align: left;
+  overflow: hidden;
+}
+.flex img {
+  border-radius: 10px;
+  height: 360px;
+}
+.flex h3 {
+  margin-top: 0px;
+}
+.flex p {
+  margin-top: -10px;
+}

@@ -1,0 +1,30 @@
+.container {
+  margin: 0;
+  overflow: visible !important;
+}
+.block {
+  position: relative;
+  height: 200px;
+  width: 280px;
+  text-align: left;
+  overflow: hidden;
+}
+.flex {
+  display: flex;
+}
+.prop {
+  width: 400px;
+  height: 120px;
+  background-image: url("./../src/assets/fef.png");
+  background-position: left;
+  background-repeat: no-repeat;
+}
+.flex h3 {
+  font-size: 18px;
+}
+
+input[type="checkbox" i] {
+  width: 20px;
+  border: 1px solid red !important;
+  border-color: red;
+}
