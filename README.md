@@ -1,4 +1,5 @@
 # React + TypeScript + Vite
+![Uploading Slide 16_9 - 1.jpg…]()
 ![Скриншот 18-12-2024 175920](https://github.com/user-attachments/assets/b7383175-eb11-4bbb-8bc2-eb2c018e5bae)
 ![Скриншот 18-12-2024 175911](https://github.com/user-attachments/assets/fc4fc4b5-5515-4a35-b891-453cd68a59c8)
 ![Скриншот 18-12-2024 175900](https://github.com/user-attachments/assets/9c0d1af4-3ae8-4289-8ecc-a06feeaca0d3)
