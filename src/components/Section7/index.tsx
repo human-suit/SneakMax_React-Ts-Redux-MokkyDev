@@ -1,6 +1,10 @@
 import style from "./style.module.css";
 import { YMaps, Map, Placemark } from "@pbe/react-yandex-maps";
+import useDeviseType from "../../hooks/useDeviceType";
+
 const Section7 = () => {
+  const windowSize = useDeviseType();
+
   return (
     <>
       <div className={style.blockX}></div>
@@ -31,8 +35,8 @@ const Section7 = () => {
           <div className={style.rightBlock}>
             <YMaps>
               <Map
-                height={450}
-                width={600}
+                height={windowSize < 801 ? 200 : 450}
+                width={windowSize < 801 ? 300 : 600}
                 defaultState={{ center: [59.937234, 30.308474], zoom: 9 }}
               >
                 <Placemark defaultGeometry={[59.937234, 30.308474]} />

@@ -96,7 +96,7 @@ const TopMenu: FC<Props> = ({ isModal, onClick }) => {
               <h3>{allPrice}</h3>
             </div>
 
-            <Link onClick={onClick} to={`/box`}>
+            <Link className={style.butZak} onClick={onClick} to={`/box`}>
               Перейти в корзину
             </Link>
           </div>

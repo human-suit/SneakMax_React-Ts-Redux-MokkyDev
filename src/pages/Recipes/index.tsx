@@ -80,7 +80,7 @@ const Recipes = () => {
     <div>
       <div className={style.container}>
         <div className={style.main}>
-          <div className={style.flex}>
+          <div className={style.flexV}>
             <h2>Оформление заказа</h2>
             <p className={style.bottom}>Заказ № {Date.now()}</p>
           </div>

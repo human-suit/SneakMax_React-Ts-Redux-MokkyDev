@@ -60,3 +60,57 @@ input[type="range"] {
 .flexSize button {
   padding: 10px;
 }
+.new {
+  background-color: #f24f50 !important;
+  border: 0px !important;
+}
+
+@media (max-width: 1921px) {
+}
+@media (max-width: 1641px) {
+}
+@media (max-width: 1281px) {
+}
+@media (max-width: 821px) {
+}
+@media (max-width: 769px) {
+}
+@media (max-width: 481px) {
+  .rightBord {
+    height: 800px;
+    margin-left: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    overflow-y: scroll;
+    border-bottom: 4px solid black;
+  }
+  .leftBord {
+    height: 620px;
+    padding: 20px 30px;
+    text-align: left;
+    background-color: #f2f0f3;
+  }
+  .podbor {
+    width: 120px;
+  }
+  .podbor h4 {
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .flexSize button {
+    font-size: 12px;
+    padding: 5px;
+  }
+  .pol div input {
+    font-size: 8px;
+  }
+  .gridBord button {
+    margin-top: 40px;
+    margin-left: -300px;
+    background-color: #f24f50;
+    border-radius: 10px;
+    padding: 20px 50px;
+    color: white;
+  }
+}

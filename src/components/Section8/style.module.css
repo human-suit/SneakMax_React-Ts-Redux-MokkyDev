@@ -38,8 +38,7 @@
   display: flex;
   justify-content: space-between;
 }
-.rightBlock {
-}
+
 .flexImg {
   display: flex;
 }
@@ -57,4 +56,35 @@
   font-weight: 500;
   padding: 10px 20px;
   color: whitesmoke;
+}
+@media (max-width: 1921px) {
+}
+@media (max-width: 1641px) {
+}
+@media (max-width: 1281px) {
+}
+@media (max-width: 821px) {
+  .rightBlock {
+    margin-left: -10px;
+  }
+}
+@media (max-width: 769px) {
+  .rightBlock {
+    margin-left: -10px;
+  }
+}
+@media (max-width: 481px) {
+  .blockSect5 {
+    display: grid;
+  }
+  .center img {
+    height: 140px;
+    margin-top: 40px;
+  }
+  .gridImg img {
+    height: 100px;
+  }
+  .rightBlock {
+    margin-left: -20px;
+  }
 }

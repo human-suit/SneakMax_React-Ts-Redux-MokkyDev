@@ -34,3 +34,21 @@
   height: 50px;
   background-color: white;
 }
+@media (max-width: 1921px) {
+}
+@media (max-width: 1641px) {
+}
+@media (max-width: 1281px) {
+}
+@media (max-width: 821px) {
+}
+@media (max-width: 769px) {
+  .flexCom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+@media (max-width: 481px) {
+  .flexCom {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

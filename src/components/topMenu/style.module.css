@@ -87,3 +87,32 @@
   height: 50px;
   margin-top: 30px;
 }
+
+@media (max-width: 1921px) {
+}
+@media (max-width: 1641px) {
+}
+@media (max-width: 1281px) {
+}
+@media (max-width: 821px) {
+}
+@media (max-width: 769px) {
+}
+@media (max-width: 481px) {
+  .box {
+    width: 500px;
+    height: 490px;
+    background: #fff;
+    margin-top: 120px;
+    margin-left: -15px;
+  }
+  .delet {
+    font-size: 14px;
+  }
+  .butZak {
+    font-size: 14px !important;
+    height: 20px !important;
+    margin-right: 80px;
+    margin-top: 10px;
+  }
+}

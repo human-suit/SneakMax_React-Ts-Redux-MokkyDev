@@ -32,3 +32,34 @@
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 1921px) {
+}
+@media (max-width: 1641px) {
+}
+@media (max-width: 1281px) {
+}
+@media (max-width: 821px) {
+}
+@media (max-width: 769px) {
+}
+@media (max-width: 481px) {
+  .leftBlock {
+  }
+  .grey h3 {
+    font-size: 18px;
+  }
+  .grey h4 {
+    font-size: 14px;
+  }
+  .blockSect5 {
+    display: grid;
+  }
+  .rightBlock {
+    margin-top: 40px;
+  }
+  .green {
+    width: 25px;
+    height: 25px;
+    padding: 5px;
+  }
+}

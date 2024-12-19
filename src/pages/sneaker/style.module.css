@@ -19,7 +19,8 @@
 }
 .grid1 {
   display: grid;
-  width: 400px;
+  width: 340px;
+  text-align: justify;
 }
 .grid p {
   margin-top: -15px;
@@ -56,7 +57,15 @@
   .back {
     display: grid;
   }
-  .back img {
-    width: 300px;
+  .grid img {
+    height: 400px;
+  }
+  .back_white img {
+    width: 20px;
+  }
+  .flex {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 }

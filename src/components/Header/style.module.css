@@ -31,3 +31,91 @@ li a {
 .flex {
   display: flex;
 }
+.logo img:hover {
+  width: 120px;
+}
+.menuBlock {
+  margin-top: 5px;
+}
+.menuBlock a {
+  font-size: 21px;
+}
+
+@media (max-width: 1921px) {
+  .logo img {
+    height: 100px;
+    width: 180px;
+  }
+  .flex {
+    margin-top: 5px;
+  }
+  li > a {
+    font-size: 32px;
+    font-weight: 900;
+    display: flex;
+  }
+  li > a > img {
+    margin-left: 5px;
+  }
+  li > a > div {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 1641px) {
+  .logo img {
+    height: 100px;
+    width: 180px;
+  }
+  .flex {
+    margin-top: 5px;
+  }
+  li > a {
+    font-size: 24px;
+    font-weight: 900;
+    display: flex;
+  }
+  li > a > img {
+    margin-left: 5px;
+  }
+  li > a > div {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 1281px) {
+  .logo img {
+    width: 160px;
+  }
+  .flex {
+    margin-top: 5px;
+  }
+  li > a {
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+  }
+  li > a > img {
+    margin-left: 5px;
+  }
+  li > a > div {
+    margin-left: 5px;
+  }
+}
+@media (max-width: 821px) {
+  .logo img {
+    width: 100px;
+  }
+  .flex {
+    margin-top: 5px;
+  }
+  li > a {
+    font-size: 12px;
+    font-weight: 400;
+    display: flex;
+  }
+  li > a > img {
+    margin-left: 5px;
+  }
+  li > a > div {
+    margin-left: 5px;
+  }
+}

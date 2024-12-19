@@ -7,6 +7,7 @@ import Section5 from "../../components/Section5";
 import Section6 from "../../components/Section6";
 import Section7 from "../../components/Section7";
 import Section8 from "../../components/Section8";
+
 const Home = () => {
   return (
     <div className={style.container}>
@@ -17,7 +18,7 @@ const Home = () => {
             Мы продаем кроссовки брендов Nike, Adidas, Puma, Reebook. Converse и
             могие другие по низким ценам
           </p>
-          <Link to={"/review"}>Перейти к покупкам</Link>
+          <Link to={"/box"}>Перейти к покупкам</Link>
         </div>
       </div>
       <div className={style.text}>

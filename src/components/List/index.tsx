@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 import { useTypeSelector } from "../../hooks/useTypeSelector";
 import { useState } from "react";
 import { customADD, setADD } from "../../store/action-creators/customer";
+import useDeviseType from "../../hooks/useDeviceType";
 
 import Nouislider from "nouislider-react";
 import "nouislider/distribute/nouislider.css";
@@ -13,12 +14,15 @@ const List = () => {
   const dispatch: any = useDispatch();
   const [page, setPage] = useState(8);
 
+  const [isVib, setVib] = useState(false);
+
   const mas = ["36", "37", "38", "39", "40", "41", "42"];
-  const [size, setSize] = useState(0);
+
+  const [size, setSize] = useState<any>(0);
 
   const [masFilter, setFilter] = useState<any>([]);
 
-  const [statePol, setStatePol] = useState<any>(null);
+  const [statePol, setStatePol] = useState<any>([]);
   const { error, loading, sneakersMain } = useTypeSelector(
     (state) => state.customer
   );
@@ -28,7 +32,22 @@ const List = () => {
   }, []);
 
   const changeChange = (e: any) => {
-    setStatePol(e.target.value);
+    if (statePol.length == 0) {
+      statePol.push(e.target.value);
+      setStatePol(statePol);
+    } else {
+      for (let index = 0; index < statePol.length; index++) {
+        if (statePol[index] == e.target.value) {
+          statePol.splice(index, 1);
+          setStatePol(statePol);
+          break;
+        } else if (index == statePol.length - 1) {
+          statePol.push(e.target.value);
+          setStatePol(statePol);
+          break;
+        }
+      }
+    }
     console.log(statePol);
   };
 
@@ -46,6 +65,11 @@ const List = () => {
     console.log(e);
   };
 
+  // const handleClickSvap = () => {
+  //   let element: HTMLElement | null = document.getElementById("1");
+  //   element!.classList.add(className);
+  // };
+
   const Slider = () => (
     <Nouislider
       range={{ min: 0, max: 35000 }}
@@ -55,9 +79,19 @@ const List = () => {
     />
   );
 
-  const changeSize = (sizeVal: any) => {
-    setSize(sizeVal);
-    console.log(sizeVal);
+  const changeSize = (sizeVal: any, index: any) => {
+    if (size == 0) {
+      let element: HTMLElement | null = document.getElementById(index);
+      element!.classList.add(style.new);
+      setSize(sizeVal);
+    } else {
+      let element: HTMLElement | null = document.getElementById(size);
+      element!.classList.remove(style.new);
+      setSize(sizeVal);
+      console.log(sizeVal);
+      element = document.getElementById(index);
+      element!.classList.add(style.new);
+    }
   };
   const handleClick = () => {
     if (statePol == null || value <= 1) {
@@ -87,11 +121,18 @@ const List = () => {
     }
   };
   const handleBreak = () => {
+    if (size > 0) {
+      let element: HTMLElement | null = document.getElementById(size);
+      element!.classList.remove(style.new);
+    }
     setFilter([]);
     setSize(0);
-    setStatePol(null);
+    setStatePol([]);
     setValue(0);
   };
+
+  const windowSize = useDeviseType();
+
   return (
     <>
       <div className={style.container}>
@@ -113,20 +154,25 @@ const List = () => {
                     onChange={(e) => changeChange(e)}
                     value={"Мужской"}
                   />
-                  мужской
+                  {windowSize < 801 ? "М" : "Мужской"}
                   <input
                     type="checkbox"
                     onChange={(e) => changeChange(e)}
                     value={"Женский"}
                   />
-                  женский
+                  {windowSize < 801 ? "Ж" : "Женский"}
                 </div>
               </div>
               <div className={style.size}>
                 <h4>Размер</h4>
                 <div className={style.flexSize}>
                   {mas.map((use, index) => (
-                    <button onClick={() => changeSize(use)} key={index}>
+                    <button
+                      id={use}
+                      className=""
+                      onClick={() => changeSize(use, use)}
+                      key={index}
+                    >
                       {use}
                     </button>
                   ))}

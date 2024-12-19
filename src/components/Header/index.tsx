@@ -45,9 +45,11 @@ const Header = () => {
           <div>
             <ul>
               {windowSize < 801 ? (
-                <a href="#" id="menu" onClick={handleClick}>
-                  Menu
-                </a>
+                <li className={style.menuBlock}>
+                  <a href="#" id="menu" onClick={handleClick}>
+                    Menu
+                  </a>
+                </li>
               ) : (
                 <div className={style.flex}>
                   <li>
