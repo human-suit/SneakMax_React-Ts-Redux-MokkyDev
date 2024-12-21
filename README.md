@@ -1,5 +1,9 @@
 # React + TypeScript + Vite
 
+new Update: animate
+![chrome-capture-2024-11-21 2213(1)](https://github.com/user-attachments/assets/2ec29f72-91aa-4e71-b22c-8e1e34e6a65a)
+
+
 new update 21.12.2024
 ![chrome-capture-2024-11-21](https://github.com/user-attachments/assets/8926808f-0100-48d1-93eb-bd7bff910df7)
 ![chrome-capture-2024-11-21](https://github.com/user-attachments/assets/b347800e-8b2d-47b3-b1d1-931dd021ae98)
