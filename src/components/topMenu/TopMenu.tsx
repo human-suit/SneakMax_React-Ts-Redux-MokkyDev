@@ -12,6 +12,7 @@ type Props = {
 };
 const TopMenu: FC<Props> = ({ isModal, onClick }) => {
   if (!isModal) {
+    document.body.style.overflow = "visible";
     return null;
   }
 
@@ -59,12 +60,18 @@ const TopMenu: FC<Props> = ({ isModal, onClick }) => {
     dispatch(delADD(id));
   };
 
+  setTimeout(() => {
+    let elementOne: any = document.getElementById("styl");
+    elementOne.classList.add(style.box__after_open);
+    // console.log("lol");
+  }, 50);
+
   const modalRoot = document.getElementById("menu") as HTMLElement;
 
   return createPortal(
     <div className={style.popupBox}>
-      <div className={style.box}>
-        <span className={style.closeIcon} onClick={onClick}></span>
+      <div className={style.closeIcon} onClick={onClick}></div>
+      <div id="styl" className={style.box}>
         <div className={style.body}>
           <div className={style.block}>
             {beanSneakers.length != 0 ? (

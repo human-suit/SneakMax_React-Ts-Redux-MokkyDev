@@ -8,6 +8,15 @@
   z-index: 4;
 }
 
+.box__after_open {
+  opacity: 1 !important;
+  transform: translateX(0px) !important;
+}
+
+.box__before_close {
+  opacity: 0 !important;
+  transform: translateX(-120px) !important;
+}
 .box {
   position: relative;
   width: 500px;
@@ -20,17 +29,24 @@
   border-right: 1px solid #999;
   overflow: auto;
   z-index: 5;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: all 500ms ease-in-out;
 }
 
 .closeIcon {
   cursor: pointer;
   position: fixed;
-  background: transparent;
   width: 100%;
-  bottom: 0;
-  left: 0;
   height: 100vh;
-  z-index: -1;
+  top: 0;
+  left: 0;
+
+  z-index: -2;
+}
+.body {
+  position: relative;
+  z-index: 1;
 }
 .body a {
   border-radius: 5px;

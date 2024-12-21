@@ -32,6 +32,11 @@
   font-size: 16px;
   padding: 20px 40px;
   border-radius: 10px;
+  transition: 1s;
+}
+.top_pad a:hover {
+  transition: 1s;
+  background-color: #a12d2d;
 }
 
 .text img {
@@ -40,6 +45,28 @@
   margin-top: -280px;
   margin-left: -430px;
   width: 960px;
+  animation-name: rotation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+/* @keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+} */
+
+@keyframes rotation {
+  0% {
+    width: 960px;
+  }
+  100% {
+    width: 1000px;
+  }
 }
 
 @media (max-width: 1921px) {

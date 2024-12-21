@@ -24,8 +24,11 @@ const Header = () => {
   const handleClick = () => {
     if (isModal) {
       setModal(false);
+      document.body.style.overflow = "visible";
     } else {
       setModal(true);
+
+      document.body.style.overflow = "hidden";
     }
   };
   const windowSize = useDeviseType();
