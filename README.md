@@ -1,4 +1,10 @@
 # React + TypeScript + Vite
+
+new update 21.12.2024
+![chrome-capture-2024-11-21](https://github.com/user-attachments/assets/8926808f-0100-48d1-93eb-bd7bff910df7)
+![chrome-capture-2024-11-21](https://github.com/user-attachments/assets/b347800e-8b2d-47b3-b1d1-931dd021ae98)
+
+update 20.12
 ![Slide 16_9 - 1](https://github.com/user-attachments/assets/de81a999-06dc-4070-821b-b6d64b999c2a)
 ![Скриншот 18-12-2024 175920](https://github.com/user-attachments/assets/b7383175-eb11-4bbb-8bc2-eb2c018e5bae)
 ![Скриншот 18-12-2024 175911](https://github.com/user-attachments/assets/fc4fc4b5-5515-4a35-b891-453cd68a59c8)
