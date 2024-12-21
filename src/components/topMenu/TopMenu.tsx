@@ -3,7 +3,7 @@ import style from "./style.module.css";
 import { createPortal } from "react-dom";
 import { Link } from "react-router-dom";
 import { useTypeSelector } from "../../hooks/useTypeSelector";
-import { delADD } from "../../store/action-creators/customer";
+import { delADD, setZakaz } from "../../store/action-creators/customer";
 import { useDispatch } from "react-redux";
 
 type Props = {
@@ -18,7 +18,7 @@ const TopMenu: FC<Props> = ({ isModal, onClick }) => {
   const dispatch: any = useDispatch();
 
   const NumberZapaz = Date.now();
-  const [beanData, serBeanData] = useState<any>(null);
+  const [beanData, serBeanData] = useState<any>([]);
 
   const [allPrice, setPrice] = useState<number>(0);
   const [beanSneakers, serSneakers] = useState<any[]>([]);
@@ -26,6 +26,7 @@ const TopMenu: FC<Props> = ({ isModal, onClick }) => {
     (state) => state.customer
   );
   useEffect(() => {
+    dispatch(setZakaz(caseZakaz));
     const getData = async () => {
       serBeanData(caseZakaz);
     };
@@ -52,7 +53,7 @@ const TopMenu: FC<Props> = ({ isModal, onClick }) => {
     };
     getData();
     getSneakers();
-  }, [NumberZapaz]);
+  }, [beanData.length, caseZakaz.length]);
 
   const deleteClick = (id: any) => {
     dispatch(delADD(id));

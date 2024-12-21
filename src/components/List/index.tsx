@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { useTypeSelector } from "../../hooks/useTypeSelector";
 import { useState } from "react";
-import { customADD, setADD } from "../../store/action-creators/customer";
+import { customADD } from "../../store/action-creators/customer";
 import useDeviseType from "../../hooks/useDeviceType";
 
 import Nouislider from "nouislider-react";
@@ -14,7 +14,7 @@ const List = () => {
   const dispatch: any = useDispatch();
   const [page, setPage] = useState(8);
 
-  const [isVib, setVib] = useState(false);
+  // const [isVib, setVib] = useState(false);
 
   const mas = ["36", "37", "38", "39", "40", "41", "42"];
 
@@ -94,29 +94,42 @@ const List = () => {
     }
   };
   const handleClick = () => {
-    if (statePol == null || value <= 1) {
-      alert("Не выбраны параметры!");
+    if (size == 0) {
+      alert("Выберите размер!");
     } else {
       const getData = async () => {
         setFilter([]);
         try {
-          const req = await fetch(
-            `https://1742eb39e7f44ae8.mokky.dev/sneakers?sizes=*${size}*&gender=*${statePol}*`
-          );
+          let req: any;
+          if (statePol.length == 0) {
+            req = await fetch(
+              `https://1742eb39e7f44ae8.mokky.dev/sneakers?sizes=*${size}*`
+            );
+          } else {
+            req = await fetch(
+              `https://1742eb39e7f44ae8.mokky.dev/sneakers?sizes=*${size}*&gender=*${statePol}*`
+            );
+          }
           const data = await req.json();
+          let mas = [];
           for (let index = 0; index < data.length; index++) {
             const element: any = data[index];
-            if (element.price < value) {
-              masFilter.push(element);
+            if (value == 0) {
+              mas.push(element);
+            } else {
+              if (element.price <= value) {
+                mas.push(element);
+              }
             }
           }
-          setFilter(masFilter);
+          setFilter(mas);
           // console.log(data);
           console.log(masFilter);
         } catch (error) {
           console.log("Error->", error);
         }
       };
+
       getData();
     }
   };

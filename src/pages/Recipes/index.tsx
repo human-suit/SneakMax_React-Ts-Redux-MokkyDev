@@ -6,7 +6,7 @@ import { useDispatch } from "react-redux";
 const Recipes = () => {
   const dispatch: any = useDispatch();
 
-  const [beanData, serBeanData] = useState<any>(null);
+  const [beanData, serBeanData] = useState<any>([]);
   const [beanSneakers, serSneakers] = useState<any[]>([]);
   const [allPrice, setPrice] = useState<number>(0);
   const [name, setName] = useState<string>("");
@@ -19,6 +19,7 @@ const Recipes = () => {
 
   const NumberZapaz = Date.now();
   useEffect(() => {
+    dispatch(setZakaz(caseZakaz));
     const getData = async () => {
       serBeanData(caseZakaz);
     };
@@ -45,7 +46,7 @@ const Recipes = () => {
     };
     getData();
     getSneakers();
-  }, [NumberZapaz]);
+  }, [beanData.length]);
 
   const zakazClick = () => {
     if (numberTel == "" || name == "" || email == "") {
@@ -58,7 +59,7 @@ const Recipes = () => {
       setnumberTel("");
       setEmail("");
       dispatch(setZakaz([]));
-      serBeanData(null);
+      serBeanData([]);
       alert("Заказ оформлен");
     }
   };

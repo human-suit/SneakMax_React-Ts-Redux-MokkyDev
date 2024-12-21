@@ -19,7 +19,7 @@
 ul {
   display: flex;
   list-style: none;
-  font-size: 18px;
+  font-size: 16px;
 }
 li {
   margin-right: 15px;
@@ -50,7 +50,7 @@ li a {
     margin-top: 5px;
   }
   li > a {
-    font-size: 32px;
+    font-size: 36px;
     font-weight: 900;
     display: flex;
   }

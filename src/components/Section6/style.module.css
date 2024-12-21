@@ -38,6 +38,72 @@
 .gridQues p {
   color: #bcbcbc;
 }
+
+.cl_btn_2 {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+}
+.cl_btn_2 div {
+  cursor: pointer;
+  position: relative;
+  height: 18px;
+  width: 30px;
+}
+.cl_btn_2 .leftright {
+  height: 4px;
+  width: 20px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #337ab7;
+  border-radius: 2px;
+  transform: rotate(45deg);
+  transition: all 0.3s ease-in;
+}
+.cl_btn_2 .rightleft {
+  height: 4px;
+  width: 20px;
+  position: absolute;
+  margin-top: 24px;
+  background-color: #337ab7;
+  border-radius: 2px;
+  transform: rotate(-45deg);
+  transition: all 0.3s ease-in;
+}
+.cl_btn_2 .close_btn {
+  margin: 54px 0 0 -5px;
+  position: absolute;
+  color: #337ab7;
+  font-family: Tahoma, sans-serif;
+  font-size: 13px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+}
+.Rotateleftright {
+  transform: rotate(-45deg) !important;
+  background-color: #000 !important;
+}
+.Rotaterightleft {
+  transform: rotate(45deg) !important;
+  background-color: #000 !important;
+}
+/* .Rotateclose_btn {
+  opacity: 1;
+} */
+/* .cl_btn_2 div:hover .leftright {
+  transform: rotate(-45deg);
+  background-color: #000;
+}
+.cl_btn_2 div:hover .rightleft {
+  transform: rotate(45deg);
+  background-color: #000;
+}
+.cl_btn_2 div:hover .close_btn {
+  opacity: 1;
+} */
+
 @media (max-width: 1921px) {
 }
 @media (max-width: 1641px) {

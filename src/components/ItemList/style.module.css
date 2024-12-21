@@ -12,15 +12,38 @@
   height: 250px;
 }
 .block h2 {
-  font-size: 18px;
+  font-size: 16px;
   width: 250px;
-
+  height: 30px;
+  overflow: hidden;
   text-align: justify;
 }
 .block h3 {
   font-size: 16px;
 }
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.flex a {
+  padding: 10px;
+  color: white;
+  border-radius: 10px;
 
+  background-color: #f24f50;
+}
+.flex a:hover {
+  transition: 0.3s;
+  background-color: brown;
+}
+.flex button {
+  margin-top: 0px;
+  padding: 10px;
+}
+.flex button:hover {
+  transition: 0.3s;
+  background-color: brown;
+}
 @media (max-width: 1921px) {
 }
 @media (max-width: 1641px) {
